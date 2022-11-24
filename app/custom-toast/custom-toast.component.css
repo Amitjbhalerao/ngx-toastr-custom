@@ -148,11 +148,36 @@ color: #5350EC;
 }
 
 .close-icon { 
-  position: relative; 
+  position:absolute; 
+  /* height: 20px; */
   /* width: 20%;
   height: 20px; */
 }
-.close-icon .toast-close-button {
+.close-icon .toast-close-button.custom-toast-success {
+  position: absolute;
+  /* top: 30%; */
+  color: white;
+  left: 20px;
+ background-color:  #04C900;
+  font-size: 40px;
+  font-weight: 100;
+}
+.close-icon .toast-close-button.custom-toast-info {
+  position: absolute;
+  /* top: 30%; */
+  color: white;
+  background-color: #5350EC;
+  font-size: 40px;
+  font-weight: 100;
+}
+.close-icon .toast-close-button.custom-toast-warning {
+  position: absolute;
+  /* top: 30%; */
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+}
+.close-icon .toast-close-button.custom-toast-error {
   position: absolute;
   /* top: 30%; */
   color: white;
