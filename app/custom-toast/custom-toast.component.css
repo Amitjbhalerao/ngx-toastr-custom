@@ -45,6 +45,10 @@
 }
 
 .toaster .toast-icon {
+/* display: flex;
+justify-content: center; */
+padding-left: 16px;
+padding-top: 20px;
   /* border-radius: 4px 0 0 4px; */
 }
 .toaster .toast-icon.custom-toast-success {
@@ -108,7 +112,7 @@ font-weight: 500;
 font-size: 13px;
 line-height: 16px;
 color: #5350EC;
-top:5px;
+
 }
 .toaster .toast-icon.custom-toast-info #success-icon, .toaster .toast-icon.custom-toast-info #error-icon, .toaster .toast-icon.custom-toast-info #warning-icon {
   display: none;
