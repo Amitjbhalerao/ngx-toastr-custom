@@ -8,13 +8,18 @@
 <div *ngIf="message && !options.enableHtml"  role="alert" aria-live="polite"
     class="custom-message"
     [class]="options.messageClass" [attr.aria-label]="message">
- {{ message }}
-</div>
-<div class="close-icon">
+    {{ message }} 
+  </div>
+  <div>
+    
+  </div>
+  <a style="font-size:20px;">&times;</a>
+<!-- <a class="close"> -->
+<!-- <div class="close-icon">
   <a *ngIf="options.closeButton" [class]="options.messageClass" (click)="remove()" class="toast-close-button">
     &times;
   </a>
-</div>
+</div> -->
   </div>
   
   <!-- <div class="toast-details">

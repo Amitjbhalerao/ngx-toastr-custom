@@ -17,7 +17,7 @@ export class AppComponent  {
 
   showSuccessToast(){
     this.toastRef = this.toastr.success("The reboot request was unsuccessful","Device Unreachable",{
-     disableTimeOut: true,
+     disableTimeOut: false,
       tapToDismiss: true,
       positionClass:'toast-top-right',
       toastClass: "toast-icon custom-toast-success"
@@ -28,21 +28,21 @@ export class AppComponent  {
 
    showWarningToast(){
     this.toastRef = this.toastr.warning("The reboot request was unsuccessful","Device Unreachable",{
-     disableTimeOut: true,
+     disableTimeOut: false,
       tapToDismiss: true,
       toastClass: "toast-icon custom-toast-warning"
     });
    }
    showInfoToast(){
     this.toastRef = this.toastr.info("The reboot request was unsuccessful","Device Unreachable",{
-     disableTimeOut: true,
+     disableTimeOut: false,
       tapToDismiss: true,
       toastClass: "toast-icon custom-toast-info"
     });
    }
 showErrorToast(){
     this.toastRef = this.toastr.error("The reboot request was unsuccessful","Device Unreachable",{
-      disableTimeOut: true,
+      disableTimeOut: false,
       tapToDismiss: true,
       toastClass: "toast-icon custom-toast-error"
     });
