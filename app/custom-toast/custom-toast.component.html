@@ -1,0 +1,37 @@
+<div class="toaster">
+  <div class="toast-icon" style="width:100%;"   [class]="options.toastClass">
+    <!-- <i class="fas info-icon fa-info-circle"></i> -->
+    <div *ngIf="message && options.enableHtml" role="alert" aria-live="polite"
+    class="custom-message"
+    [class]="options.messageClass" [innerHTML]="message">
+</div>
+<div *ngIf="message && !options.enableHtml"  role="alert" aria-live="polite"
+    class="custom-message"
+    [class]="options.messageClass" [attr.aria-label]="message">
+ {{ message }}
+</div>
+<div class="close-icon">
+  <a *ngIf="options.closeButton" [class]="options.messageClass" (click)="remove()" class="toast-close-button">
+    &times;
+  </a>
+</div>
+  </div>
+  <!-- <div class="toast-details">
+    <div> -->
+
+      <!-- <div *ngIf="title"
+           [class]="options.titleClass"
+           [attr.aria-label]="title"
+           class="custom-title">
+        {{ title }}
+      </div> -->
+     
+    <!-- </div>
+
+
+  </div> -->
+ 
+</div>
+<div *ngIf="options.progressBar">
+  <div class="toast-progress" [style.width]="width + '%'"></div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "apps": [{
+    "styles": [
+    "../node_modules/ngx-toastr/toastr.css",
+     "node_modules/@clr/icons/clr-icons.min.css",
+     "node_modules/@clr/ui/clr-ui.min.css",
+     "styles.css",
+    ],
+    "scripts":[
+            "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/jquery-ui-dist/jquery-ui.js",
+              "node_modules/draw2d/dist/draw2d.js",
+              "node_modules/easy-pie-chart/dist/easypiechart.js",
+              "node_modules/screenfull/dist/screenfull.js",
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js"
+    ]
+  }]
+}
